@@ -5,13 +5,8 @@ import { AppService } from './app.service';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get('hello/:name')
-  getHello(@Param('name') name: string): string {
-    return this.appService.getHello(name);
-  }
-
-  @Get('bye')
-  getGoodbye(): string {
-    return this.appService.sayGoodbye();
+  @Get('hello/:id')
+  user(@Param('id') id: String): string {
+    return this.appService.getHello(id);
   }
 }
