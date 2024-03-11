@@ -1,8 +1,8 @@
-export class User{
-    identification: String;
-    name: String;
-    lastname: String;
-    email: String;
-    password: String;
-    avatar: String;
+export class User {
+  identification: string;
+  name: string;
+  lastname: string;
+  email: string;
+  password: string;
+  avatar: string;
 }

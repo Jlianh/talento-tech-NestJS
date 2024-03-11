@@ -6,7 +6,7 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get('hello/:id')
-  user(@Param('id') id: String): string {
+  user(@Param('id') id: string): string {
     return this.appService.getHello(id);
   }
 }
