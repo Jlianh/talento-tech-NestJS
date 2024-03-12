@@ -19,7 +19,6 @@ export class UsersService {
 
   async addUser(userDto: CreateUserDto): Promise<User> {
     const hashedPassword = await bcrypt.hash(userDto.password, 10);
-    console.log(hashedPassword);
     const user = new this.userModel({
       ...userDto,
       password: hashedPassword,
@@ -55,7 +54,6 @@ export class UsersService {
   }
 
   async findByEmail(email: string): Promise<User> {
-    console.log(email);
     return await this.userModel.findOne({ email: email });
   }
 }

@@ -7,9 +7,7 @@ import {
   MinLength,
   Validate,
 } from 'class-validator';
-import {
-  UniqueEmailValidator,
-} from '../validations/unique-email.validator';
+import { UniqueEmailValidator } from '../validations/unique-email.validator';
 
 export class CreateUserDto {
   @IsNotEmpty()

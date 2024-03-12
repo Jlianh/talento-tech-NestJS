@@ -24,4 +24,3 @@ export class UniqueEmailValidator implements ValidatorConstraintInterface {
     return 'Email already exists';
   }
 }
-
